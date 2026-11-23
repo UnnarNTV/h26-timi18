@@ -24,12 +24,11 @@ export function Product() {
   return (
     <div>
       <h1>{product.name}</h1>
+      Flokkur:{" "}
+      <Link to={`/categories/${product.category}`}>{category.name}</Link>
       <p>Verð: {product.price}</p>
       <Link to="/products">Til baka</Link>
       <br />
-      <Link to={`/categories/${product.category}`}>
-        Til baka á vöruflokkin {category.name}
-      </Link>
     </div>
   );
 }
