@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router";
+import { NavLink, Outlet } from "react-router";
 
 export function Layout() {
   return (
@@ -7,6 +7,7 @@ export function Layout() {
         <NavLink to="/">Heim</NavLink>
         <NavLink to="/about">Um okkur</NavLink>
         <NavLink to="/products">Vörur</NavLink>
+        <NavLink to="/categories">Flokkar</NavLink>
       </nav>
       <main>
         <Outlet />
